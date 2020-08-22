@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#20564FC1"
+    android:id="@+id/constraintLayout">
+
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/login_bg"
+        android:ems="10"
+        android:fontFamily="@font/cairo"
+        android:hint="إسم المستخدم"
+        android:textSize="14sp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:background="@drawable/login_bg"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="كلمة السر"
+        android:textSize="14sp"
+        android:fontFamily="@font/cairo"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/emailET"
+        app:layout_constraintStart_toStartOf="@+id/emailET"
+        app:layout_constraintTop_toBottomOf="@+id/emailET" />
+
+    <Button
+        android:id="@+id/logInET"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/cairo"
+        android:text="دخول"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordET"
+        app:layout_constraintStart_toStartOf="@+id/passwordET"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET" />
+</androidx.constraintlayout.widget.ConstraintLayout>
